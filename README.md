@@ -1,10 +1,10 @@
 
 
-![](https://img.shields.io/npm/v/react-native-custom-progress-steps.svg?style=flat)
-![](https://img.shields.io/npm/dt/react-native-custom-progress-steps.svg)
+![](https://img.shields.io/npm/v/react-native-progress-steps-screens.svg?style=flat)
+![](https://img.shields.io/npm/dt/react-native-progress-steps-screens.svg)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-# react-native-custom-progress-steps
+# react-native-progress-steps-screens
 
 Un componente simple y totalmente personalizable de React Native que implementa una interfaz de usuario de pasos de progreso.
 * El contenido de cada paso se muestra dentro de un ScrollView personalizable.
@@ -12,26 +12,26 @@ Un componente simple y totalmente personalizable de React Native que implementa 
 
 Ejemplo Uno             |  Ejemplo Dos
 :-------------------------:|:-------------------------:
-![](assets/react-native-custom-progress-steps_1.gif) [examples/ExampleOne.js](examples/ExampleOne.js)| ![](assets/react-native-custom-progress-steps_2.gif) [examples/ExampleTwo.js](examples/ExampleTwo.js)
+![](assets/react-native-progress-steps-screens_1.gif) [examples/ExampleOne.js](examples/ExampleOne.js)| ![](assets/react-native-progress-steps-screens_2.gif) [examples/ExampleTwo.js](examples/ExampleTwo.js)
 
 ## Instalación
 
 Si usas yarn:
 
 ```
-yarn add react-native-custom-progress-steps
+yarn add react-native-progress-steps-screens
 ```
 
 Si usas npm:
 
 ```
-npm i react-native-custom-progress-steps
+npm i react-native-progress-steps-screens
 ```
 
 ## Uso
 
 ```
-import { ProgressSteps, ProgressStep } from 'react-native-custom-progress-steps';
+import { ProgressSteps, ProgressStep } from 'react-native-progress-steps-screens';
 ```
 
 Simplemente coloca una etiqueta `<ProgressStep />` para cada paso deseado dentro del contenedor `<ProgressSteps />`.
@@ -87,7 +87,7 @@ return (
 ```
 
 ### Manejo de Errores y Validación del Paso Actual
-La propiedad [`errors`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Ftahelromero%2Fdatos%2FrepositorioNPM%2Freact-native-custom-progress-steps%2FREADME.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A89%2C%22character%22%3A5%7D%7D%5D%2C%221f24ff09-d1d5-463b-853e-09c2906a3eaa%22%5D "Go to definition") debe usarse si hay necesidad de validación y manejo de errores al hacer clic en el botón siguiente. Si deseas evitar que se renderice el siguiente paso, establece la propiedad [`errors`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Ftahelromero%2Fdatos%2FrepositorioNPM%2Freact-native-custom-progress-steps%2FREADME.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A89%2C%22character%22%3A5%7D%7D%5D%2C%221f24ff09-d1d5-463b-853e-09c2906a3eaa%22%5D "Go to definition") en [`true`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Ftahelromero%2Fdatos%2FrepositorioNPM%2Freact-native-custom-progress-steps%2FREADME.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A89%2C%22character%22%3A206%7D%7D%5D%2C%221f24ff09-d1d5-463b-853e-09c2906a3eaa%22%5D "Go to definition"). Por defecto, será [`false`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Ftahelromero%2Fdatos%2FrepositorioNPM%2Freact-native-custom-progress-steps%2FREADME.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A89%2C%22character%22%3A237%7D%7D%5D%2C%221f24ff09-d1d5-463b-853e-09c2906a3eaa%22%5D "Go to definition").
+La propiedad [`errors`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Ftahelromero%2Fdatos%2FrepositorioNPM%2Freact-native-progress-steps-screens%2FREADME.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A89%2C%22character%22%3A5%7D%7D%5D%2C%221f24ff09-d1d5-463b-853e-09c2906a3eaa%22%5D "Go to definition") debe usarse si hay necesidad de validación y manejo de errores al hacer clic en el botón siguiente. Si deseas evitar que se renderice el siguiente paso, establece la propiedad [`errors`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Ftahelromero%2Fdatos%2FrepositorioNPM%2Freact-native-progress-steps-screens%2FREADME.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A89%2C%22character%22%3A5%7D%7D%5D%2C%221f24ff09-d1d5-463b-853e-09c2906a3eaa%22%5D "Go to definition") en [`true`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Ftahelromero%2Fdatos%2FrepositorioNPM%2Freact-native-progress-steps-screens%2FREADME.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A89%2C%22character%22%3A206%7D%7D%5D%2C%221f24ff09-d1d5-463b-853e-09c2906a3eaa%22%5D "Go to definition"). Por defecto, será [`false`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Ftahelromero%2Fdatos%2FrepositorioNPM%2Freact-native-progress-steps-screens%2FREADME.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A89%2C%22character%22%3A237%7D%7D%5D%2C%221f24ff09-d1d5-463b-853e-09c2906a3eaa%22%5D "Go to definition").
 
 Ejemplo de uso de verificación de validación:
 
@@ -188,7 +188,7 @@ MIT
 ```
 
 
-# react-native-custom-progress-steps
+# react-native-progress-steps-screens
 
 Un componente simple y totalmente personalizable de React Native que implementa una interfaz de usuario de pasos de progreso.
 * El contenido de cada paso se muestra dentro de un ScrollView personalizable.
@@ -196,7 +196,7 @@ Un componente simple y totalmente personalizable de React Native que implementa 
 
 Ejemplo Uno             |  Ejemplo Dos
 :-------------------------:|:-------------------------:
-![](assets/react-native-custom-progress-steps_1.gif) [examples/ExampleOne.js](examples/ExampleOne.js)| ![](assets/react-native-custom-progress-steps_2.gif) [examples/ExampleTwo.js](examples/ExampleTwo.js)
+![](assets/react-native-progress-steps-screens_1.gif) [examples/ExampleOne.js](examples/ExampleOne.js)| ![](assets/react-native-progress-steps-screens_2.gif) [examples/ExampleTwo.js](examples/ExampleTwo.js)
 
 ## Instalación
 
@@ -204,14 +204,14 @@ Si usas yarn:
 
 
 ```
-yarn add react-native-custom-progress-steps
+yarn add react-native-progress-steps-screens
 ```
 
 Si usas npm:
 
 
 ```
-npm i react-native-custom-progress-steps
+npm i react-native-progress-steps-screens
 ```
 
 
@@ -219,7 +219,7 @@ Si usas npm:
 
 
 ```
-import { ProgressSteps, ProgressStep } from 'react-native-custom-progress-steps';
+import { ProgressSteps, ProgressStep } from 'react-native-progress-steps-screens';
 ```
 
 

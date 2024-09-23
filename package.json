@@ -1,5 +1,5 @@
 {
-  "name": "react-native-custom-progress-steps",
+  "name": "react-native-progress-steps-screens",
   "version": "1.3.5",
   "description": "A simple and fully customizable React Native component that implements a progress stepper UI.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tahelromero/react-native-custom-progress-steps.git"
+    "url": "git+https://github.com/tahelromero/react-native-progress-steps-screens.git"
   },
   "keywords": [
     "react-native",
@@ -39,9 +39,9 @@
   "author": "Colby Miller",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tahelromero/react-native-custom-progress-steps/issues"
+    "url": "https://github.com/tahelromero/react-native-progress-steps-screens/issues"
   },
-  "homepage": "https://github.com/tahelromero/react-native-custom-progress-steps#readme",
+  "homepage": "https://github.com/tahelromero/react-native-progress-steps-screens#readme",
   "devDependencies": {
     "metro-react-native-babel-preset": "^0.51.1"
   },
