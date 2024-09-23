@@ -1,8 +1,8 @@
-![](https://img.shields.io/npm/v/react-native-progress-steps.svg?style=flat)
-![](https://img.shields.io/npm/dt/react-native-progress-steps.svg)
+![](https://img.shields.io/npm/v/react-native-custom-progress-steps.svg?style=flat)
+![](https://img.shields.io/npm/dt/react-native-custom-progress-steps.svg)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-# react-native-progress-steps
+# react-native-custom-progress-steps
 
 A simple and fully customizable React Native component that implements a progress stepper UI. 
 * Each steps content is displayed inside of a customizable ScrollView. 
@@ -11,7 +11,7 @@ A simple and fully customizable React Native component that implements a progres
 
 Example One             |  Example Two
 :-------------------------:|:-------------------------:
-![](assets/react-native-progress-steps_1.gif) [examples/ExampleOne.js](examples/ExampleOne.js)| ![](assets/react-native-progress-steps_2.gif) [examples/ExampleTwo.js](examples/ExampleTwo.js)
+![](assets/react-native-custom-progress-steps_1.gif) [examples/ExampleOne.js](examples/ExampleOne.js)| ![](assets/react-native-custom-progress-steps_2.gif) [examples/ExampleTwo.js](examples/ExampleTwo.js)
 
 
 ## Installation
@@ -19,19 +19,19 @@ Example One             |  Example Two
 If using yarn:
 
 ```
-yarn add react-native-progress-steps
+yarn add react-native-custom-progress-steps
 ```
 
 If using npm:
 
 ```
-npm i react-native-progress-steps
+npm i react-native-custom-progress-steps
 ```
 
 ## Usage
 
 ```
-import { ProgressSteps, ProgressStep } from 'react-native-progress-steps';
+import { ProgressSteps, ProgressStep } from 'react-native-custom-progress-steps';
 ```
 
 Simply place a `<ProgressStep />` tag for each desired step within the `<ProgressSteps />` wrapper.
@@ -182,7 +182,7 @@ Pull requests are always welcome! Feel free to open a new GitHub issue for any c
 **Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
 
 ## Author
-Colby Miller | [https://colbymillerdev.com](https://colbymillerdev.com)
+Colby Miller | [https://tahelromero.com](https://tahelromero.com)
 
 ## License
 [MIT](./LICENSE)
