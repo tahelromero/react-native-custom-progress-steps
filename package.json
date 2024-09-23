@@ -1,10 +1,10 @@
 {
   "name": "react-native-progress-steps-screens",
-  "version": "1.3.5",
-  "description": "A simple and fully customizable React Native component that implements a progress stepper UI.",
+  "version": "1.3.6",
+  "description": "Un componente simple y totalmente personalizable de React Native que implementa una interfaz de usuario de pasos de progreso.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no se especificó ninguna prueba\" && exit 1"
   },
   "repository": {
     "type": "git",
