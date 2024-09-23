@@ -1,6 +1,6 @@
 {
   "name": "react-native-custom-progress-steps",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "description": "A simple and fully customizable React Native component that implements a progress stepper UI.",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,19 @@
     "ui",
     "stepper",
     "progress",
-    "progress steps"
+    "progress steps",
+    "react-native",
+    "componente de react",
+    "componente de react native",
+    "react",
+    "react native",
+    "móvil",
+    "ios",
+    "android",
+    "interfaz de usuario",
+    "pasos",
+    "progreso",
+    "pasos de progreso"
   ],
   "author": "Colby Miller",
   "license": "MIT",

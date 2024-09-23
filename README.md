@@ -1,67 +1,67 @@
+
+
 ![](https://img.shields.io/npm/v/react-native-custom-progress-steps.svg?style=flat)
 ![](https://img.shields.io/npm/dt/react-native-custom-progress-steps.svg)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 # react-native-custom-progress-steps
 
-A simple and fully customizable React Native component that implements a progress stepper UI. 
-* Each steps content is displayed inside of a customizable ScrollView. 
-* Fully customizable buttons are displayed at the bottom of the component to move between steps.
+Un componente simple y totalmente personalizable de React Native que implementa una interfaz de usuario de pasos de progreso.
+* El contenido de cada paso se muestra dentro de un ScrollView personalizable.
+* Botones totalmente personalizables se muestran en la parte inferior del componente para moverse entre los pasos.
 
-
-Example One             |  Example Two
+Ejemplo Uno             |  Ejemplo Dos
 :-------------------------:|:-------------------------:
 ![](assets/react-native-custom-progress-steps_1.gif) [examples/ExampleOne.js](examples/ExampleOne.js)| ![](assets/react-native-custom-progress-steps_2.gif) [examples/ExampleTwo.js](examples/ExampleTwo.js)
 
+## Instalación
 
-## Installation
-
-If using yarn:
+Si usas yarn:
 
 ```
 yarn add react-native-custom-progress-steps
 ```
 
-If using npm:
+Si usas npm:
 
 ```
 npm i react-native-custom-progress-steps
 ```
 
-## Usage
+## Uso
 
 ```
 import { ProgressSteps, ProgressStep } from 'react-native-custom-progress-steps';
 ```
 
-Simply place a `<ProgressStep />` tag for each desired step within the `<ProgressSteps />` wrapper.
+Simplemente coloca una etiqueta `<ProgressStep />` para cada paso deseado dentro del contenedor `<ProgressSteps />`.
 
 ```
 <View style={{flex: 1}}>
     <ProgressSteps>
-        <ProgressStep label="First Step">
+        <ProgressStep label="Primer Paso">
             <View style={{ alignItems: 'center' }}>
-                <Text>This is the content within step 1!</Text>
+                <Text>¡Este es el contenido del paso 1!</Text>
             </View>
         </ProgressStep>
-        <ProgressStep label="Second Step">
+        <ProgressStep label="Segundo Paso">
             <View style={{ alignItems: 'center' }}>
-                <Text>This is the content within step 2!</Text>
+                <Text>¡Este es el contenido del paso 2!</Text>
             </View>
         </ProgressStep>
-        <ProgressStep label="Third Step">
+        <ProgressStep label="Tercer Paso">
             <View style={{ alignItems: 'center' }}>
-                <Text>This is the content within step 3!</Text>
+                <Text>¡Este es el contenido del paso 3!</Text>
             </View>
         </ProgressStep>
     </ProgressSteps>
 </View>
 ```
 
-### Button Styling Usage
-Button container and text are fully customizable using the `nextBtnStyle, nextBtnTextStyle, previousBtnStyle, and previousBtnTextStyle` props.
+### Uso de Estilo de Botones
+El contenedor y el texto de los botones son totalmente personalizables usando las propiedades `nextBtnStyle, nextBtnTextStyle, previousBtnStyle, y previousBtnTextStyle`.
 
-Example usage to change a buttons text color: 
+Ejemplo de uso para cambiar el color del texto de un botón:
 
 ```
 const buttonTextStyle = {
@@ -71,19 +71,231 @@ const buttonTextStyle = {
 return (
     <View style={{flex: 1}}>
         <ProgressSteps>
-            <ProgressStep label="First Step" nextBtnTextStyle={buttonTextStyle} previousBtnTextStyle={buttonTextStyle}>
+            <ProgressStep label="Primer Paso" nextBtnTextStyle={buttonTextStyle} previousBtnTextStyle={buttonTextStyle}>
                 <View style={{ alignItems: 'center' }}>
-                    <Text>This is the content within step 1!</Text>
+                    <Text>¡Este es el contenido del paso 1!</Text>
                 </View>
             </ProgressStep>
-            <ProgressStep label="Second Step" nextBtnTextStyle={buttonTextStyle} previousBtnTextStyle={buttonTextStyle}>
+            <ProgressStep label="Segundo Paso" nextBtnTextStyle={buttonTextStyle} previousBtnTextStyle={buttonTextStyle}>
                 <View style={{ alignItems: 'center' }}>
-                    <Text>This is the content within step 2!</Text>
+                    <Text>¡Este es el contenido del paso 2!</Text>
                 </View>
             </ProgressStep>
         </ProgressSteps>
     </View>
 )
+```
+
+### Manejo de Errores y Validación del Paso Actual
+La propiedad [`errors`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Ftahelromero%2Fdatos%2FrepositorioNPM%2Freact-native-custom-progress-steps%2FREADME.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A89%2C%22character%22%3A5%7D%7D%5D%2C%221f24ff09-d1d5-463b-853e-09c2906a3eaa%22%5D "Go to definition") debe usarse si hay necesidad de validación y manejo de errores al hacer clic en el botón siguiente. Si deseas evitar que se renderice el siguiente paso, establece la propiedad [`errors`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Ftahelromero%2Fdatos%2FrepositorioNPM%2Freact-native-custom-progress-steps%2FREADME.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A89%2C%22character%22%3A5%7D%7D%5D%2C%221f24ff09-d1d5-463b-853e-09c2906a3eaa%22%5D "Go to definition") en [`true`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Ftahelromero%2Fdatos%2FrepositorioNPM%2Freact-native-custom-progress-steps%2FREADME.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A89%2C%22character%22%3A206%7D%7D%5D%2C%221f24ff09-d1d5-463b-853e-09c2906a3eaa%22%5D "Go to definition"). Por defecto, será [`false`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Ftahelromero%2Fdatos%2FrepositorioNPM%2Freact-native-custom-progress-steps%2FREADME.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A89%2C%22character%22%3A237%7D%7D%5D%2C%221f24ff09-d1d5-463b-853e-09c2906a3eaa%22%5D "Go to definition").
+
+Ejemplo de uso de verificación de validación:
+
+```
+state = {
+    isValid: false,
+    errors: false
+};
+
+onNextStep = () => {
+    if (!this.state.isValid) {
+      this.setState({ errors: true });
+    } else {
+      this.setState({ errors: false });
+    }
+};
+
+render() {
+    return (
+      <View style={{ flex: 1 }}>
+        <ProgressSteps>
+          <ProgressStep label="Primer Paso" onNext={this.onNextStep} errors={this.state.errors}>
+            <View style={{ alignItems: 'center' }}>
+              <Text>¡Este es el contenido del paso 1!</Text>
+            </View>
+          </ProgressStep>
+          <ProgressStep label="Segundo Paso">
+            <View style={{ alignItems: 'center' }}>
+              <Text>¡Este es el contenido del paso 2!</Text>
+            </View>
+          </ProgressStep>
+        </ProgressSteps>
+      </View>
+    );
+}
+```
+
+## Documentación
+
+### Componente de Pasos de Progreso
+| Nombre                      | Descripción                              | Predeterminado     | Tipo    |
+|---------------------------|------------------------------------------|-------------|---------|
+| borderWidth               | Ancho de la barra de progreso entre pasos  | 6           | Número  |
+| borderStyle               | Tipo de borde para la barra de progreso      | solid       | Cadena  |
+| activeStepIconBorderColor | Color del borde exterior para el paso activo | #4bb543     | Cadena  |
+| progressBarColor          | Color de la barra de progreso predeterminada        | #ebebe4     | Cadena  |
+| completedProgressBarColor | Color de la barra de progreso completada      | #4bb543     | Cadena  |
+| activeStepIconColor       | Color del icono del paso activo            | transparente | Cadena  |
+| completedStepIconColor    | Color del icono del paso completado         | #4bb543     | Cadena  |
+| disabledStepIconColor     | Color del icono del paso deshabilitado          | #ebebe4     | Cadena  |
+| labelFontFamily           | Familia de fuentes para la etiqueta del icono del paso      | Fuente predeterminada de iOS/Android | Cadena |
+| labelColor                | Color de la etiqueta predeterminada               | gris claro   | Cadena  |
+| labelFontSize             | Tamaño de fuente para la etiqueta del icono del paso        | 14          | Número  |
+| activeLabelColor          | Color de la etiqueta activa                | #4bb543     | Cadena  |
+| activeLabelFontSize       | Tamaño de fuente opcional para la etiqueta del paso activo      | null     | Número  |
+| completedLabelColor       | Color de la etiqueta completada             | gris claro   | Cadena  |
+| activeStepNumColor        | Color del número del paso activo          | negro       | Cadena  |
+| completedStepNumColor     | Color del número del paso completado       | negro       | Cadena  |
+| disabledStepNumColor      | Color del número del paso deshabilitado        | blanco       | Cadena  |
+| completedCheckColor       | Color de la marca de verificación del paso completado    | blanco       | Cadena  |
+| activeStep                | Especificar manualmente el paso activo         | 0           | Número  |
+| isComplete                | Establecer todos los pasos en estado activo            | false       | Booleano |
+| topOffset                 | Establecer el desplazamiento superior de la barra de progreso              | 30          | Número  |
+| marginBottom              | Establecer el margen inferior de la barra de progreso           | 50          | Número  |
+
+### Componente de Paso de Progreso
+| Nombre | Descripción | Predeterminado | Tipo |
+|------------------|--------------------------------------------------------------------------|----------|---------|
+| label | Título del paso actual a mostrar | null | Cadena |
+| onNext | Function llamada cuando se presiona el botón siguiente | null | Function |
+| onPrevious | Function llamada cuando se presiona el botón anterior | null | Function |
+| onSubmit | Function llamada cuando se presiona el botón de envío del paso | null | Function |
+| nextBtnText | Texto a mostrar dentro del botón siguiente | Next | Cadena |
+| previousBtnText | Texto a mostrar dentro del botón anterior | Previous | Cadena |
+| finishBtnText | Texto a mostrar dentro del botón en el último paso | Submit | Cadena |
+| nextBtnStyle | Objeto de estilo para proporcionar a los botones siguiente/finalizar | { textAlign: 'center', padding: 8 } | Objeto |
+| nextBtnTextStyle | Objeto de estilo para proporcionar al texto del botón siguiente/finalizar | { color: '#007aff', fontSize: 18 } | Objeto |
+| nextBtnDisabled | Valor para deshabilitar/habilitar el botón siguiente | false | Booleano |
+| previousBtnStyle | Objeto de estilo para proporcionar al botón anterior | { textAlign: 'center', padding: 8 } | Objeto |
+| previousBtnTextStyle | Objeto de estilo para proporcionar al texto del botón anterior | { color: '#007aff', fontSize: 18 } | Objeto |
+| previousBtnDisabled | Valor para deshabilitar/habilitar el botón anterior | false | Booleano |
+| scrollViewProps | Objeto para proporcionar propiedades al componente ScrollView | {} | Objeto |
+| scrollable | El contenido del Paso de Progreso debe ser desplazable | true | Booleano |
+| viewProps | Objeto para proporcionar propiedades al componente de vista si scrollable es false | {} | Objeto |
+| errors | Usado para ayudar con la validación del paso actual. Si es true, el siguiente paso no se renderizará | false | Booleano |
+| removeBtnRow | Usado para renderizar el paso de progreso sin la fila de botones | false | Booleano |
+
+## Contribuciones
+¡Las solicitudes de contribución siempre son bienvenidas! Siéntete libre de abrir un nuevo problema en GitHub para cualquier cambio que se pueda hacer.
+
+**¿Trabajando en tu primera solicitud de contribución?** Puedes aprender cómo hacerlo en esta serie *gratuita* [Cómo Contribuir a un Proyecto de Código Abierto en GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
+
+## Autor
+Autor Original - Colby Miller | [https://tahelromero.com](https://tahelromero.com)
+
+## Licencia
+MIT
+```
+
+
+# react-native-custom-progress-steps
+
+Un componente simple y totalmente personalizable de React Native que implementa una interfaz de usuario de pasos de progreso.
+* El contenido de cada paso se muestra dentro de un ScrollView personalizable.
+* Botones totalmente personalizables se muestran en la parte inferior del componente para moverse entre los pasos.
+
+Ejemplo Uno             |  Ejemplo Dos
+:-------------------------:|:-------------------------:
+![](assets/react-native-custom-progress-steps_1.gif) [examples/ExampleOne.js](examples/ExampleOne.js)| ![](assets/react-native-custom-progress-steps_2.gif) [examples/ExampleTwo.js](examples/ExampleTwo.js)
+
+## Instalación
+
+Si usas yarn:
+
+
+```
+yarn add react-native-custom-progress-steps
+```
+
+Si usas npm:
+
+
+```
+npm i react-native-custom-progress-steps
+```
+
+
+Si usas npm:
+
+
+```
+import { ProgressSteps, ProgressStep } from 'react-native-custom-progress-steps';
+```
+
+
+Simplemente coloca una etiqueta `<ProgressStep />` para cada paso deseado dentro del contenedor `<ProgressSteps />`.
+
+
+```
+<View style={{ flex: 1 }}>
+  {" "}
+  <ProgressSteps>
+    {" "}
+    <ProgressStep label="Primer Paso">
+      {" "}
+      <View style={{ alignItems: "center" }}>
+        {" "}
+        <Text>¡Este es el contenido del paso 1!</Text>{" "}
+      </View>{" "}
+    </ProgressStep>{" "}
+    <ProgressStep label="Segundo Paso">
+      {" "}
+      <View style={{ alignItems: "center" }}>
+        {" "}
+        <Text>¡Este es el contenido del paso 2!</Text>{" "}
+      </View>{" "}
+    </ProgressStep>{" "}
+    <ProgressStep label="Tercer Paso">
+      {" "}
+      <View style={{ alignItems: "center" }}>
+        {" "}
+        <Text>¡Este es el contenido del paso 3!</Text>{" "}
+      </View>{" "}
+    </ProgressStep>{" "}
+  </ProgressSteps>{" "}
+</View>
+```
+
+
+### Uso de Estilo de Botones
+El contenedor y el texto de los botones son totalmente personalizables usando las propiedades `nextBtnStyle, nextBtnTextStyle, previousBtnStyle, y previousBtnTextStyle`.
+
+Ejemplo de uso para cambiar el color del texto de un botón:
+
+
+```
+const buttonTextStyle = { color: "#393939" };
+
+return (
+  <View style={{ flex: 1 }}>
+    {" "}
+    <ProgressSteps>
+      {" "}
+      <ProgressStep
+        label="Primer Paso"
+        nextBtnTextStyle={buttonTextStyle}
+        previousBtnTextStyle={buttonTextStyle}
+      >
+        {" "}
+        <View style={{ alignItems: "center" }}>
+          {" "}
+          <Text>¡Este es el contenido del paso 1!</Text>{" "}
+        </View>{" "}
+      </ProgressStep>{" "}
+      <ProgressStep
+        label="Segundo Paso"
+        nextBtnTextStyle={buttonTextStyle}
+        previousBtnTextStyle={buttonTextStyle}
+      >
+        {" "}
+        <View style={{ alignItems: "center" }}>
+          {" "}
+          <Text>¡Este es el contenido del paso 2!</Text>{" "}
+        </View>{" "}
+      </ProgressStep>{" "}
+    </ProgressSteps>{" "}
+  </View>
+);
 ```
 
 ### Current Step Error and Validation Handling
@@ -182,7 +394,7 @@ Pull requests are always welcome! Feel free to open a new GitHub issue for any c
 **Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
 
 ## Author
-Colby Miller | [https://tahelromero.com](https://tahelromero.com)
+Original Autor - Colby Miller | [https://colbymillerdev.com](https://colbymillerdev.com)
 
 ## License
 [MIT](./LICENSE)
